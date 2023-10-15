@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, CardContent, Typography} from "@mui/material";
-import  kidsImage from './dreamKids.png';
+// import  kidsImage from './dreamKids.png';
+import  kidsImage from './Kids.jpg';
 
 const containerStyle = {
     display: "flex",
@@ -39,13 +40,13 @@ const cardStyle = {
 // };
 
 const headTextStyle = {
-    fontWeight: "bold",
+    fontWeight: "black",
     color: "snow",
     textAlign: "center",
 };
 
 const infoTextStyle = {
-    color: "snow",
+    color: "black",
     textAlign: "center"
 };
 
@@ -53,7 +54,7 @@ const kidsZone = {
     fontSize: "2rem", // Doppelt so groß wie die normale Schrift
     fontFamily: "Comic Sans MS", // Hier kannst du die gewünschte Schriftart einfügen
     fontWeight: "bold",
-    color: "snow",
+    color: "black",
     textAlign: "center",
     marginBottom: "1em", // Fügt eine separate Leerzeile hinzu
 };
@@ -72,7 +73,7 @@ export default function StyleRSPage2() {
                     </Typography>
 
                     <Typography sx={infoTextStyle}>
-                        Wählen Sie zwischen Indoor- und Outdoormöglichkeiten
+                        Wählen Sie zwischen Indoor- und Outdoor möglichkeiten
                     </Typography>
                 </CardContent>
                 <CardContent style={{
