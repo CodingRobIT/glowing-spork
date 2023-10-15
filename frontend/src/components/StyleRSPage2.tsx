@@ -18,17 +18,17 @@ const buttonStyle = {
         backgroundColor: "black",
     },
 };
-// Dieser Code nimmt immer die breite des Bildes egal wie hoch es ist daher lohnt es sich hier höhere bilder zu verwenden
+// Dieser Code nimmt immer die Breite des Bildes, egal wie hoch es ist. Daher lohnt es sich hier, höhere Bilder zu verwenden.
 const cardStyle = {
     backgroundImage: `url(${kidsImage})`,
     backgroundSize: "100% auto", // Breite wird angepasst, Höhe bleibt unverändert
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundColor: "gray",
-    height: "150px", // hier ggf fürs handy anpassen
+    height: "150px", // Hier sollte, wenn nötig die Anpassung für mobile Geräte vorgenommen werden, damit die Schrift im Banner sichtbar bleibt.
 };
 
-// dieser code passt es immer so an das entweder max breite oder Max höhe übernommen wird und das Bild im verhältniss bleibt
+// Dieser Code passt das Bild immer so an, dass entweder die maximale Breite oder maximale Höhe übernommen wird, und das Bild im Verhältnis bleibt.
 // const cardStyle = {
 //     backgroundImage: `url(${kidsImage})`,
 //     backgroundSize: "contain",
