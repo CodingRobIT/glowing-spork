@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, CardContent, Typography} from "@mui/material";
-// import  kidsImage from './dreamKids.png';
-import  kidsImage from './Kids.jpg';
+import  kidsImage from './dreamKids.png';
+//import  kidsImage from './Kids.jpg';
 
 const containerStyle = {
     display: "flex",
@@ -40,13 +40,13 @@ const cardStyle = {
 // };
 
 const headTextStyle = {
-    fontWeight: "black",
+    fontWeight: "snow",
     color: "snow",
     textAlign: "center",
 };
 
 const infoTextStyle = {
-    color: "black",
+    color: "snow",
     textAlign: "center"
 };
 
@@ -54,7 +54,7 @@ const kidsZone = {
     fontSize: "2rem", // Doppelt so groß wie die normale Schrift
     fontFamily: "Comic Sans MS", // Hier kannst du die gewünschte Schriftart einfügen
     fontWeight: "bold",
-    color: "black",
+    color: "snow",
     textAlign: "center",
     marginBottom: "1em", // Fügt eine separate Leerzeile hinzu
 };
