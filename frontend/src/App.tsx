@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Link, Route, Routes, useNavigate} from "react-router-dom";
+import StyleRSPage2 from "./components/StyleRSPage2";
+import {Button} from "@mui/material";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Link to="/page2">Zu Page 2</Link>
+                <Button> Header </Button>
+                <Routes>
+                    <Route path="/page2" element={<StyleRSPage2 />} />
+                </Routes>
+
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
