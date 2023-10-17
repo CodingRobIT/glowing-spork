@@ -12,7 +12,6 @@ This is the Team Projekt of Kathi, Hasan and Robin
 - npm install react-router-dom
 - npm install @mui/material @mui/icons-material
 - npm install @emotion/react @emotion/styled
-- npm install @mui/material @mui/icons-material
 - und ggf. Nochmal npm install
 
 
