@@ -13,6 +13,7 @@ function App() {
                 <Link to="/page2">Zu Page 2</Link>
                 <Routes>
                     <Route path="/page2" element={<StyleRSPage2 />} />
+                    <Route path="/" element={<StyleKSHome/>} />
                 </Routes>
 
             </div>
