@@ -1,6 +1,7 @@
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import StyleRSPage2 from "./components/StyleRSPage2";
 import {Button} from "@mui/material";
+import StyleKSHome from "./components/StyleKSHome";
 
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <Link to="/"> Home </Link>
                 <Link to="/page2">Zu Page 2</Link>
-                <Button> Header </Button>
                 <Routes>
                     <Route path="/page2" element={<StyleRSPage2 />} />
                 </Routes>
