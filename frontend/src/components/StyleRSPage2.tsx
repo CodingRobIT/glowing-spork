@@ -16,7 +16,7 @@ const buttonStyle = {
     fontWeight: "bold",
     "&:hover": {
         color: "yellow",
-        backgroundColor: "black",
+        backgroundColor: "blue",
     },
 };
 // Dieser Code nimmt immer die Breite des Bildes, egal wie hoch es ist. Daher lohnt es sich hier, höhere Bilder zu verwenden.
@@ -89,15 +89,7 @@ export default function StyleRSPage2() {
                     {/*Natürlich könnte man auch mehrere Button-Styles hinzufügen, die unterschiedlich aussehen. */}
                     {/*Zum Beispiel wird bei "Save" der Button grün und bei "Abbrechen" rot. Dafür legt man jeweils die passenden Funktionen an, */}
                     {/*wie "buttonSave" oder "buttonAbort", so dass es absolut eindeutig ist, was genau der "Style" beinhaltet.*/}
-                    <Button sx={{
-                        backgroundColor: "black",
-                        color: "#2196F3",
-                        fontWeight: "bold",
-                        "&:hover": {
-                            color: "yellow",
-                            backgroundColor: "black"
-                        },
-                    }}>
+                    <Button sx={buttonStyle}>
                         Indoor
                     </Button>
 
