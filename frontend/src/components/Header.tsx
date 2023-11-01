@@ -1,4 +1,4 @@
-import {AppBar, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
 export default function Header() {
 
@@ -10,8 +10,8 @@ export default function Header() {
                         Do-It!
                     </Typography>
                     <div>
-                        <Link to="/"> Home </Link>
-                        <Link to="/page2">Zu Page 2</Link>
+                        <Button component={Link} to="/">Home</Button>
+                        <Button component={Link} to="/page2">Zu Page 2</Button>
                     </div>
                 </div>
             </Toolbar>
