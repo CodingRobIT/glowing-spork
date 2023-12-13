@@ -17,12 +17,12 @@ public record Kids (
         Float cost
 ){
         // Explanation:
-        // - name: Name of the activity like playground or oen-air bath
+        // - name: Name of the activity, such as playground or open-air bath.
         // - age: Age of the kid.
-        // - indoor: Whether the kid likes indoor activities.
-        // - outdoor: Whether the kid likes outdoor activities.
-        // - groupSize: Depending on the size of the group some activities are not possible.
-        // - sporty: Whether the kid is sporty (can be null if not specified).
-        // - educational: Whether the kid is educational (can be null if not specified).
-        // - cost:When ever an activity should be cost something it's useful to have a Float it could be null also
+        // - indoor: Indicates whether the kid enjoys indoor activities.
+        // - outdoor: Indicates whether the kid enjoys outdoor activities.
+        // - groupSize: Depending on the group size, some activities may not be possible.
+        // - sporty: Indicates whether the kid is sporty (can be null if not specified).
+        // - educational: Indicates whether the kid is inclined towards educational activities (can be null if not specified).
+        // - cost: Represents the cost of the activity (can be null if not applicable).
 }
