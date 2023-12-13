@@ -19,10 +19,10 @@ public record Kids (
         // Explanation:
         // - name: Name of the activity, such as playground or open-air bath.
         // - age: Age of the kid.
-        // - indoor: Indicates whether the kid enjoys indoor activities.
-        // - outdoor: Indicates whether the kid enjoys outdoor activities.
+        // - indoor: for indoor activities.
+        // - outdoor: for outdoor activities.
         // - groupSize: Depending on the group size, some activities may not be possible.
-        // - sporty: Indicates whether the kid is sporty (can be null if not specified).
-        // - educational: Indicates whether the kid is inclined towards educational activities (can be null if not specified).
+        // - sporty: for sporty activity (can be null if not specified).
+        // - educational: for educational activities (can be null if not specified).
         // - cost: Represents the cost of the activity (can be null if not applicable).
 }
