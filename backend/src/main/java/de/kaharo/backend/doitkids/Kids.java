@@ -14,7 +14,8 @@ public record Kids (
         Boolean sporty,
         Boolean educational,
         // Using float for decimal numbers, as we need to represent values like "10,50€"
-        Float cost
+        Float cost,
+        String location
 ){
         // Explanation:
         // - name: Name of the activity, such as playground or open-air bath.
@@ -25,4 +26,5 @@ public record Kids (
         // - sporty: for sporty activity (can be null if not specified).
         // - educational: for educational activities (can be null if not specified).
         // - cost: Represents the cost of the activity (can be null if not applicable).
+        // - location to get the position of the place
 }
