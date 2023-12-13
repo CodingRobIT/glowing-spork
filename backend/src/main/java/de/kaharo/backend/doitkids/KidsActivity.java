@@ -2,7 +2,7 @@ package de.kaharo.backend.doitkids;
 
 import org.springframework.data.annotation.Id;
 
-public record Kids (
+public record KidsActivity(
 
         @Id
         String id,

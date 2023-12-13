@@ -4,5 +4,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface KidsRepoInterface extends MongoRepository<Kids, String> {
+public interface KidsActivityRepoInterface extends MongoRepository<KidsActivity, String> {
 }
