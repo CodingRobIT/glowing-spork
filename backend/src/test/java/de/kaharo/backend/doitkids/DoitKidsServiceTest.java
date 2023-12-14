@@ -3,7 +3,9 @@ package de.kaharo.backend.doitkids;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.mockito.Mockito.*;
 
@@ -36,5 +38,24 @@ class DoitKidsServiceTest {
 
         // Check if the findAll() method has been called
         verify(mockRepo, times(1)).findAll();
+    }
+
+    @Test
+    public void testGetAllKidsActivity_NoActivitiesFound() {
+        KidsActivityRepoInterface mockRepo = mock(KidsActivityRepoInterface.class);
+
+        // Return empty list for the mock repo
+        when(mockRepo.findAll()).thenReturn(Collections.emptyList());
+
+        DoitKidsService doitKidsService = new DoitKidsService(mockRepo);
+
+        // Check if the expected exception is thrown
+        NoSuchElementException exception = assertThrows(
+                NoSuchElementException.class,
+                () -> doitKidsService.getAllKidsActivity()
+        );
+
+        // Check if the error message corresponds to the expected message
+        assertEquals("No kids activities found", exception.getMessage());
     }
 }
