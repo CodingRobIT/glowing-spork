@@ -11,7 +11,7 @@ public class DoitKidsService {
 
     private final KidsActivityRepoInterface kidsActivityRepoInterface;
 
-    public List<KidsActivity> getAllKidsActivitys() {
-        return KidsActivityRepoInterface.findAll();
+    public List<KidsActivity> getAllKidsActivities() {
+        return kidsActivityRepoInterface.findAll();
     }
 }
