@@ -9,13 +9,13 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/kidsactivities")
+@RequestMapping("/api/kidsactivity")
 public class DoitKidsController {
 
     private final DoitKidsService kidsService;
 
     @GetMapping
-    public List<KidsActivity> getAllKidsActivities() {
-        return kidsService.getAllKidsActivities();
+    public List<KidsActivity> getAllKidsActivity() {
+        return kidsService.getAllKidsActivity();
     }
 }
