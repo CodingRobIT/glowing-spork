@@ -52,7 +52,7 @@ class DoitKidsServiceTest {
         // Check if the expected exception is thrown
         NoSuchElementException exception = assertThrows(
                 NoSuchElementException.class,
-                () -> doitKidsService.getAllKidsActivity()
+                doitKidsService::getAllKidsActivity
         );
 
         // Check if the error message corresponds to the expected message
