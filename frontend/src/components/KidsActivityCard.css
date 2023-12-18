@@ -1,0 +1,11 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Game-Card {
+    width: calc(50% - 500px);
+    margin-bottom: 16px;
+}
