@@ -1,0 +1,39 @@
+.game-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #282c34;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .game-gallery {
+        gap: 10px;
+    }
+}
+
+.searchbar {
+    display: flex;
+    max-width: 500px;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    flex-direction: column;
+}
+
+.searchbar input {
+    margin-right: 10px;
+    flex: 1;
+}
+
+.game-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
