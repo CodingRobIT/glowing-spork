@@ -12,6 +12,7 @@ export default function Header() {
                     <div>
                         <Button component={Link} to="/">Home</Button>
                         <Button component={Link} to="/page2">Zu Page 2</Button>
+                        <Button component={Link} to="/kidsactivity"> Zur Test Seite</Button>
                     </div>
                 </div>
             </Toolbar>
