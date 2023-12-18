@@ -1,9 +1,7 @@
 package de.kaharo.backend.doitkids;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,4 +16,10 @@ public class DoitKidsController {
     public List<KidsActivity> getAllKidsActivity() {
         return kidsService.getAllKidsActivity();
     }
+
+    // Post Mapping works let it disabled for later ?
+//    @PostMapping
+//    public KidsActivity addKidsActivity(@RequestBody KidsActivity kidsActivityToAdd) {
+//        return kidsService.addKidsActivity(kidsActivityToAdd);
+//    }
 }

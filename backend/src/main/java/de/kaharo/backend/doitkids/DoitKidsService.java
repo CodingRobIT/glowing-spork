@@ -1,13 +1,10 @@
 package de.kaharo.backend.doitkids;
 
-import de.kaharo.backend.doitComments.CommentList;
-//import de.kaharo.backend.doitComments.CommentListRepoInterface;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
@@ -47,4 +44,10 @@ public class DoitKidsService {
 //            throw new NoSuchElementException("KidsActivity with ID " + activityId + " not found");
 //        }
 //    }
+
+    // add methode for PostMapping works let it Disabled for Later ?
+//    public KidsActivity addKidsActivity(KidsActivity kidsActivityToAdd) {
+//        return kidsActivityRepoInterface.save(kidsActivityToAdd);
+//    }
+
 }
